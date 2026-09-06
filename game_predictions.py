@@ -46,7 +46,6 @@ CURRENT_WC_YEAR = 2026
 CURRENT_WC_TOURNAMENT = "FIFA World Cup"
 
 def load_data(results_path: str, shootouts_path: str) -> pd.DataFrame:
-    """Load and merge results + shootouts; resolve winner for all rows."""
     results   = pd.read_csv(results_path)
     shootouts = pd.read_csv(shootouts_path)
 
